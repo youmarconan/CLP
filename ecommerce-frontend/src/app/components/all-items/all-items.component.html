@@ -1,0 +1,21 @@
+<table class = "table table-bordered table-hover table-striped table-secondary">
+    <thead class = table-dark>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>-</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let item of items" >
+            <td> {{ item.id }} </td>
+            <td> {{ item.name }} </td>
+            <td> {{ item.price }} </td>
+            <td>
+                <button type="button" class="btn btn-dark btn1" (click)="order(item)">ORDER</button>
+                <h5>{{item.msg}}</h5>
+            </td>
+        </tr>
+    </tbody>
+</table>

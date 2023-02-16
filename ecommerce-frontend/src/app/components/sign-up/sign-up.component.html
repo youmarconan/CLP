@@ -1,0 +1,34 @@
+<div class="container-fluid">
+
+    <h3 id="hh" >ENTER YOUR INFO</h3>
+  
+      <div class="form-group">
+        <label for="email">EMAIL</label>
+        <input type="text" class="form-control" id="email" placeholder="EMAIL" [(ngModel)] = user.email>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">PASSWORD</label>
+        <input type="password" class="form-control" id="password" placeholder="PASSWORD" [(ngModel)] = user.password>
+      </div>
+  
+      <div class="form-group">
+        <label for="firstname">FISRT NAME</label>
+        <input type="text" class="form-control" id="firstname" placeholder="FIRST NAME" [(ngModel)] = user.firstName>
+      </div>
+  
+      <div class="form-group">
+        <label for="lastname">LAST NAME</label>
+        <input type="text" class="form-control" id="lastname" placeholder="LAST NAME" [(ngModel)] = user.lastName>
+      </div>
+
+      <div class="form-group">
+        <label for="cardnum">CARD NUMBER</label>
+        <input type="text" class="form-control" id="lastname" placeholder="CARD NUMBER" [(ngModel)] = user.cardNum>
+      </div>
+
+  
+  
+      <button id="btn1" type="button" class="btn btn-dark" (click)="signup()">SIGN UP</button>
+  
+    </div>
